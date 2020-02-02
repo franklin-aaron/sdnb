@@ -35,7 +35,6 @@ type House struct {
 	Ptr    string
 	Ns     string
 	Mx     string
-	Srv    string
 	Txt    string
 	Domain string //域名
 }
@@ -190,7 +189,6 @@ func DomainScan(domain string) error {
 			Ptr:    ptrs,
 			Ns:     nss,
 			Mx:     mxs,
-			Srv:    rsf.Srv.cname,
 			Txt:    txtrecords,
 			Domain: rsf.domain,
 		}, House{})
